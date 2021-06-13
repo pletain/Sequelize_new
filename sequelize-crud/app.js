@@ -49,7 +49,7 @@ class App {
         })
         .then(() => {
             console.log('DB Sync complete.');
-			// return db.sequelize.sync(); //싱크는 이부분에 넣어주면 된다.
+			return db.sequelize.sync(); //싱크는 이부분에 넣어주면 된다.
         })
         .catch(err => {
             console.error('Unable to connect to the database:', err);
