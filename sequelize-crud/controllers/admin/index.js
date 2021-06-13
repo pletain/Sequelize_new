@@ -8,4 +8,8 @@ router.get('/products/write', ctrl.get_products_write );
 
 router.post('/products/write', ctrl.post_products_write );
 
+//get으로 URL을 만들어주자
+router.get('/products/detail/:id', ctrl.get_products_detail);
+
+
 module.exports = router;
