@@ -24,8 +24,3 @@ p1.then( result1 => {
 }).then( result2 =>{
     console.log("p2 = " + result2.p2_text);
 });
-
-Promise.all([ p1,p2 ]).then((result)=>{
-    console.log("p1 = " + result[0].p1_text);
-    console.log("p2 = " + result[1].p2_text);
-})
